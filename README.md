@@ -2,9 +2,9 @@ Modda-Minecraft-med-Scriptcraft
 ===============================
 
 html- och ccs-kod till det som visas på 
-[http://www.malinc.se/programming/minecraft/](Modda Minecraft med ScriptCraft - Installera och kom igång!)
+[Modda Minecraft med ScriptCraft - Installera och kom igång!](http://www.malinc.se/programming/minecraft/)
 och
-[http://www.malinc.se/programming/minecraft/programDrone.php](Modda Minecraft med ScriptCraft - Programmera drönaren!)
+[Modda Minecraft med ScriptCraft - Programmera drönaren!](http://www.malinc.se/programming/minecraft/programDrone.php).
 
 Sidorna är en sammanfattning på svenska av det som står på de engelska sidorna 
 [http://scriptcraftjs.org/](http://scriptcraftjs.org/)
