@@ -68,3 +68,13 @@ code {
 img {
 	border: 1px solid #abc;
 }
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+	font-style: italic;
+	font-size: 0.9em;
+	color: #595959;
+}

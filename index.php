@@ -266,12 +266,20 @@ spawn-monsters=false</pre>
 		<p>Ett rätblock har en bredd, ett djup och en höjd. Gör ett rätblock genom att skriva kommandot:</p>
 		<pre>/js box('41', 3, 5, 10)</pre>
 		<p>Hur gör man ett rätblock av röd ull som är 2 block bred, 100 block hög och 1 block djupt? Testa dig fram!</p>
+		<figure>
+			<img src="images/minecraft1.png" alt="Pelare av röd ull" width="700" height="393"/> 
+			<figcaption>Pelare av röd ull</figcaption>
+		</figure>
 		<p>Det finns även kommandon för att göra cylindrar. Prova kommandona:</p>
 		<pre>/js cylinder('41', 3, 5)
 /js cylinder0('41', 5, 3)</pre>
 		<p>Du kan återanvända kommandon som du skrivit. När textraden visas trycker du på pil upp eller pil ned för att se gamla kommandon.
 			Sedan kan du förflytta dig längs ett kommando med hjälp av högerpil och vänsterpil.</p>
 		<p>Hur gör man en ihålig guldcylinder som har radien 10 och höjden 2?</p>
+		<figure>
+			<img src="images/minecraft2.png" alt="Guldcylindrar" width="700" height="393"/> 
+			<figcaption>Guldcylindrar i skymningen</figcaption>
+		</figure>
 		<p>Om man vill göra tak till hus kan man använda sig av ett prisma. Prova kommandona:</p>
 		<pre>/js prism('35:14', 6, 10)
 /js prism0('35:14', 15, 5)</pre>

@@ -64,16 +64,21 @@
 		
 		<h3>Gör väggar och tak</h3>
 		<p>Ändra koden till:</p>
-		<p><img src="images/code2.png" alt="Kod 2" width="385" height="185"/> </p>
+		<p><img src="images/code2.png" alt="Kod 2" width="390" height="185"/> </p>
 		<p>Det som står efter <code>//</code> är så kallad kommentarer. Kommentarer är till för den som läser koden och exekveras inte.</p>
 		<p>Provkör programmet i Minecraft!</p>
+		
+		<figure>
+			<img src="images/minecraft3.png" alt="Mitt hus" width="700" height="393"/> 
+			<figcaption>Mitt hus</figcaption>
+		</figure>
 		
 		<h3>Gör en variabel</h3>
 		<p>Om du vill ändra storlek på huset så att det är 5*5 block istället för 10*10 block, så måste du gå in och byta ut en siffra 
 			på sex olika ställen i koden. För att göra sådana ändringar enklare, kan du införa en variabel istället för att 
 			använda siffran 10.</p>
 		<p>Ändra koden till:</p>
-		<p><img src="images/code3.png" alt="Kod 3" width="450" height="200"/> </p>
+		<p><img src="images/code3.png" alt="Kod 3" width="380" height="200"/> </p>
 		<p>Prova att ge variabeln <code>storlek</code> olika värden.</p>
 		
 		<h3>Låt användaren bestämma storleken</h3>
@@ -81,9 +86,14 @@
 			Minecraft. Detta gör du genom att ta bort variabeln och istället ge funktionen en så kallad <b>parameter</b> 
 			innanför parenteserna.</p>
 		<p>Ändra koden till:</p>
-		<p><img src="images/code4.png" alt="Kod 4" width="450" height="187"/> </p>
+		<p><img src="images/code4.png" alt="Kod 4" width="380" height="185"/> </p>
 		<p>Kör koden inifrån Minecraft genom att exempelvis skriva:</p>
 		<pre>/js mitthus(10)</pre>
+		
+		<figure>
+			<img src="images/minecraft4.png" alt="Flera hus" width="700" height="393"/> 
+			<figcaption>Olika stora hus</figcaption>
+		</figure>
 		
 		<h3>Kedja ihop byggkommandona</h3>
 		<p>Istället för att skriva varje byggkommando som <code>d.<em>kommando();</em></code> kan man kedja
@@ -92,7 +102,7 @@
 		<p><img src="images/code5.png" alt="Kod 5" width="600" height="125"/> </p>
 		<p>där parameternamnet har förkortats till <code>s</code>.</p>
 		<p>Man kan också använda en kedja av kommandon som är uppdelad på flera rader.</p>
-		<p><img src="images/code6.png" alt="Kod 6" width="370" height="198"/> </p>
+		<p><img src="images/code6.png" alt="Kod 6" width="370" height="200"/> </p>
 		
 		<h2>Skriv en villkorssats och ge ett felmeddelande</h2>
 		<p>När man låter användare ange parametervärden är det en god idé att kontrollera vad användaren faktiskt matat in, 
@@ -103,23 +113,45 @@
 			annars <br />
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bygg huset
 		</div>
-		<p>En sådan villkorssats kan du skriva med hjälp av en så kallad if-else-sats.</p>
+		<p>En sådan villkorssats kan du skriva med hjälp av en så kallad if-else-sats. 
+			Principen för en if-else-sats visas här:</p>
+		<pre>if (<span style="color: green;"><em>villkor</em></span>) {
+	<span style="color: green;">//kod som skall köras om villkoret är sant </span>
+} else {
+	<span style="color: green;">//kod som skall köras om villkoret är falskt </span>
+}</pre>
+		<p><span style="color: green;"><em>villkor</em></span> skall vara ett logiskt uttryck, det vill
+			säga ett uttryck som är antingen sant eller falskt, exempelvis en olikhet.</p>
 		<p>Felmeddelandet kan visas på en Minecraft-skylt. Drönaren kan göra en skylt med hjälp
 			av metoden <code>sign</code>.</p>
 		<p>Ändra koden till:</p>
-		<p><img src="images/code7.png" alt="Kod 7" width="633" height="186"/> </p>
+		<p><img src="images/code7.png" alt="Kod 7" width="625" height="185"/> </p>
 		<p>Provkör:</p>
 		<pre>/js mitthus(2)</pre>
+		<figure>
+			<img src="images/minecraft5.png" alt="Felmeddelande" width="700" height="393"/> 
+			<figcaption>Felmeddelande</figcaption>
+		</figure>
+		
 		<p>För mer information (på engelska) om skyltar se 
 			<a href="https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md#dronesign-method">Drone.sign() method</a>.</p>
 		
 		<h2>Skriv en loop</h2>
-		<p>Om man vill göra ett trevåningshus, skulle man kunna använda följande kod:</p>
-		<p><img src="images/code8.png" alt="Kod 8" width="630" height="260"/> </p>
+		<p>Om man vill göra ett flervåningshus, skulle man kunna: bygga ett hus, gå upp ett steg, bygga ett hus, gå upp ett steg, o.s.v.
+			För ett trevåningshus skulle sådan kod kunna se ut så här:</p>
+		<p><img src="images/code8.png" alt="Kod 8" width="625" height="262"/> </p>
 		<p>Istället för att skriva samma två rader kod tre gånger, kan man göra en loop. Ett sätt att göra en loop
-			är att skriva en så kallad for-sats. En for-sats som utför samma sak tre gånger kan se ut som i koden nedan:</p>
-		<p><img src="images/code9.png" alt="Kod 9" width="657" height="230"/> </p>
-		<p>Raderna 9 och 10 körs tre gånger. Först gången är variabeln i=0, andra gången är i=1, tredje gången är i=2; därefter avslutas loopen 
+			är att skriva en så kallad for-sats. En for-sats kan se ut på många olika sätt men en enkel princip är
+			att använda koden: </p>
+		<pre>for (var i = 0; i &lt; <span style="color: green;"><em>antalUpprepningar</em></span>; i++) {
+	<span style="color: green;">//kod som skall upprepas </span>
+}</pre>
+		<p><span style="color: green;"><em>antalUpprepningar</em></span> är antingen ett tal skrivet som en siffra, eller
+			ett tal som är lagrat i en variabel eller parameter.</p>
+		<p>En for-sats som bygger ett hus tre gånger ser ut som i koden nedan:</p>
+		<p><img src="images/code9.png" alt="Kod 9" width="654" height="232"/> </p>
+		<p>Raderna 9 och 10 körs tre gånger. Först gången är variabeln i=0, andra gången är i=1, tredje gången är i=2; därefter 
+			räknas i upp och loopen avslutas 
 			eftersom i inte längre är mindre än 3.</p>
 		<p>Du kan också införa ännu en parameter för att låta användaren ange antal våningar. I koden nedan kallas denna parameter 
 			för <code>n</code> och for-satsen utförs <code>n</code>gånger.</p>
@@ -127,10 +159,20 @@
 		<p>Provkör koden inifrån Minecraft:</p>	
 		<pre>/js mitthus(20, 4)</pre>
 		
+		<figure>
+			<img src="images/minecraft6.png" alt="Felmeddelande" width="700" height="393"/> 
+			<figcaption>Höghus</figcaption>
+		</figure>
+		
 		<h2>Gör egna hus,</h2>
 		<p>eller tunnlar, eller järnvägar, eller villa-kvarter, eller...</p>
-		<p>För med information (på engelska) om drönaren, se 
+		<p>För mer information (på engelska) om drönaren, se 
 			<a href="https://github.com/walterhiggins/ScriptCraft/blob/master/docs/API-Reference.md#drone-plugin">ScriptCraft/API - Drone Plugin</a>. </p>
+			
+		<figure>
+			<img src="images/MCFractals.gif" alt="Minecraft fraktaler" width="506" height="263"/> 
+			<figcaption><a href="https://github.com/malinc/MinecraftFractals">Minecraft-fraktaler</a> programmerade med ScriptCraft</figcaption>
+		</figure>	
 		
 	</article>
 	
